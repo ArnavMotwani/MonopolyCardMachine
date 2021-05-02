@@ -11,6 +11,8 @@
 		6217C1EB263EE6A10092A20F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217C1EA263EE6A10092A20F /* ContentView.swift */; };
 		6217C1ED263EE6A50092A20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6217C1EC263EE6A50092A20F /* Assets.xcassets */; };
 		6217C1F0263EE6A50092A20F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6217C1EF263EE6A50092A20F /* Preview Assets.xcassets */; };
+		6217C1F8263EE70D0092A20F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217C1F7263EE70D0092A20F /* CardView.swift */; };
+		6217C1FA263EED840092A20F /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217C1F9263EED840092A20F /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		6217C1EC263EE6A50092A20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6217C1EF263EE6A50092A20F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6217C1F1263EE6A50092A20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6217C1F7263EE70D0092A20F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		6217C1F9263EED840092A20F /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				6217C1E8263EE6A10092A20F /* MonopolySwiftUIApp.swift */,
 				6217C1EA263EE6A10092A20F /* ContentView.swift */,
+				6217C1F7263EE70D0092A20F /* CardView.swift */,
+				6217C1F9263EED840092A20F /* Calculator.swift */,
 				6217C1EC263EE6A50092A20F /* Assets.xcassets */,
 				6217C1F1263EE6A50092A20F /* Info.plist */,
 				6217C1EE263EE6A50092A20F /* Preview Content */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6217C1EB263EE6A10092A20F /* ContentView.swift in Sources */,
+				6217C1FA263EED840092A20F /* Calculator.swift in Sources */,
+				6217C1F8263EE70D0092A20F /* CardView.swift in Sources */,
 				6217C1E9263EE6A10092A20F /* MonopolySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ARNV.MonopolySwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ARNV.MonopolySwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
