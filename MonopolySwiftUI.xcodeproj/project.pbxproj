@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6204EC3C26400C56008BA157 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6204EC3B26400C56008BA157 /* ContentView.swift */; };
+		6204EC3E26400D01008BA157 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6204EC3D26400D01008BA157 /* Settings.swift */; };
+		6204EC4026400F5A008BA157 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6204EC3F26400F5A008BA157 /* History.swift */; };
 		6217C1E9263EE6A10092A20F /* MonopolySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217C1E8263EE6A10092A20F /* MonopolySwiftUIApp.swift */; };
-		6217C1EB263EE6A10092A20F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217C1EA263EE6A10092A20F /* ContentView.swift */; };
+		6217C1EB263EE6A10092A20F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217C1EA263EE6A10092A20F /* HomeView.swift */; };
 		6217C1ED263EE6A50092A20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6217C1EC263EE6A50092A20F /* Assets.xcassets */; };
 		6217C1F0263EE6A50092A20F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6217C1EF263EE6A50092A20F /* Preview Assets.xcassets */; };
 		6217C1F8263EE70D0092A20F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217C1F7263EE70D0092A20F /* CardView.swift */; };
 		6217C1FA263EED840092A20F /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217C1F9263EED840092A20F /* Calculator.swift */; };
+		62793485264945D100A91883 /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62793484264945D100A91883 /* HistoryData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6204EC3B26400C56008BA157 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6204EC3D26400D01008BA157 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		6204EC3F26400F5A008BA157 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		6217C1E5263EE6A10092A20F /* MonopolySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonopolySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6217C1E8263EE6A10092A20F /* MonopolySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolySwiftUIApp.swift; sourceTree = "<group>"; };
-		6217C1EA263EE6A10092A20F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6217C1EA263EE6A10092A20F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6217C1EC263EE6A50092A20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6217C1EF263EE6A50092A20F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6217C1F1263EE6A50092A20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6217C1F7263EE70D0092A20F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		6217C1F9263EED840092A20F /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		62793484264945D100A91883 /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				6217C1E8263EE6A10092A20F /* MonopolySwiftUIApp.swift */,
-				6217C1EA263EE6A10092A20F /* ContentView.swift */,
+				6204EC3B26400C56008BA157 /* ContentView.swift */,
+				6217C1EA263EE6A10092A20F /* HomeView.swift */,
 				6217C1F7263EE70D0092A20F /* CardView.swift */,
 				6217C1F9263EED840092A20F /* Calculator.swift */,
+				6204EC3D26400D01008BA157 /* Settings.swift */,
+				6204EC3F26400F5A008BA157 /* History.swift */,
+				62793484264945D100A91883 /* HistoryData.swift */,
 				6217C1EC263EE6A50092A20F /* Assets.xcassets */,
 				6217C1F1263EE6A50092A20F /* Info.plist */,
 				6217C1EE263EE6A50092A20F /* Preview Content */,
@@ -144,7 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6217C1EB263EE6A10092A20F /* ContentView.swift in Sources */,
+				62793485264945D100A91883 /* HistoryData.swift in Sources */,
+				6204EC3E26400D01008BA157 /* Settings.swift in Sources */,
+				6217C1EB263EE6A10092A20F /* HomeView.swift in Sources */,
+				6204EC4026400F5A008BA157 /* History.swift in Sources */,
+				6204EC3C26400C56008BA157 /* ContentView.swift in Sources */,
 				6217C1FA263EED840092A20F /* Calculator.swift in Sources */,
 				6217C1F8263EE70D0092A20F /* CardView.swift in Sources */,
 				6217C1E9263EE6A10092A20F /* MonopolySwiftUIApp.swift in Sources */,
@@ -285,7 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARNV.MonopolySwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARNV.SwiftUIMonopoly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -307,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARNV.MonopolySwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARNV.SwiftUIMonopoly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -14,6 +14,7 @@ struct Calculator: View {
         case c
         case d
     }
+    
     enum colors {
         case blue
         case red
@@ -23,8 +24,9 @@ struct Calculator: View {
     }
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var gameData: gameData
     
-    @State var amount: String = "0"
+    @State var amount: String = ""
     @State var choice: choices = .m
     @State var color: colors = .blue
     
@@ -36,12 +38,14 @@ struct Calculator: View {
     
     @Binding var value: Int
     
+    var title: String
+    
     var body: some View {
         Form {
             Section {
                 HStack {
-                    Text("Amount")
-                    TextField("Amount :", text: $amount)
+                    Text("Amount :")
+                    TextField("Amount", text: $amount)
                         .keyboardType(.numberPad)
                 }
                 Picker("Choice", selection: $choice){
@@ -72,13 +76,19 @@ struct Calculator: View {
                     case .m:
                         if value >= Int(amount)! {
                             value -= Int(amount)!
+                            
+                            gameData.history.insert("\(title) lost \(amount)", at: 0)
                         }
                     case .p:
                         value += Int(amount)!
+                        
+                        gameData.history.insert("\(title) gained \(amount)", at: 0)
                     case .c:
                         if value >= Int(amount)! {
                             value -= Int(amount)!
                             community += Int(amount)!
+                            
+                            gameData.history.insert("\(title) gave \(amount) to the community", at: 0)
                         }
                     case .d:
                         if value >= Int(amount)! {
@@ -86,12 +96,16 @@ struct Calculator: View {
                             switch color {
                             case .blue:
                                 blue += Int(amount)!
+                                gameData.history.insert("\(title) gave \(amount) to the blue", at: 0)
                             case .red:
                                 red += Int(amount)!
+                                gameData.history.insert("\(title) gave \(amount) to the red", at: 0)
                             case .green:
                                 green += Int(amount)!
+                                gameData.history.insert("\(title) gave \(amount) to the green", at: 0)
                             case .yellow:
                                 yellow += Int(amount)!
+                                gameData.history.insert("\(title) gave \(amount) to the yellow", at: 0)
                             }
                         }
                     }
@@ -104,6 +118,7 @@ struct Calculator: View {
                 Button(action: {
                     UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                     value += 2000
+                    gameData.history.insert("\(title) passed go", at: 0)
                     self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Text("Pass Go")
@@ -111,6 +126,6 @@ struct Calculator: View {
                 })
             }
         }
-        .navigationTitle("Calculator")
+        .navigationTitle("Calculator" + " - " + title)
     }
 }

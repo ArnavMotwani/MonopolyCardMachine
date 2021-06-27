@@ -11,7 +11,7 @@ import SwiftUI
 struct MonopolySwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(gameData())
         }
     }
 }
